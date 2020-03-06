@@ -57,7 +57,7 @@ public class Main {
 
         System.out.println("===========================================================");
         //prints the last song in playlist
-        System.out. println("This is the last song you listened to: " +STACK.lastElement());
+        System.out. println("This is the last song you listened to: " +STACK.peek());
 
     }
 
