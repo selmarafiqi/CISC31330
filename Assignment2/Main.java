@@ -31,7 +31,6 @@ public class Main {
         // retrieving song from files
         for (int i = 0; i < list.length; i++) {
             final String filename = list[i].getPath();
-            System.out.println(filename);
             final BufferedReader br = new BufferedReader(new FileReader(filename));
 
             String line = null;
