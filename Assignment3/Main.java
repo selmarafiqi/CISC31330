@@ -19,7 +19,7 @@ public class Main{
         BufferedReader br = new BufferedReader(new FileReader(filename));
         String [] line;
         Movies movies = new Movies();
-        while((line[i] = br.readLine()) !=null){
+        while((line = br.readLine()) !=null){
             Movie movie = createMovie(line);
             movies.add(movie);
         }
