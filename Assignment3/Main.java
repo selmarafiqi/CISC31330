@@ -1,6 +1,9 @@
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+
+import com.opencsv.CSVReader;
+
 import java.io.*;
 
 public class Main{
@@ -16,7 +19,7 @@ public class Main{
     }
 
     public static Movies createMovies(String filename){
-        BufferedReader br = new BufferedReader(new FileReader(filename));
+        CSVReader br = new CSVReader(new FileReader(filename));
         String [] line;
         Movies movies = new Movies();
         while((line = br.readLine()) !=null){
